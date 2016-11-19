@@ -1,0 +1,90 @@
+0.  How many different colors does each format support?
+Ans. JPG :  16.7 million colors.
+     GIF :  256 colors.
+     PNG format supports 8-bit color but also extends it to 24-bits so supports upto 16.7 million colors.
+     BMP : 24 bit bmp supports 16.7 million colors.
+-----------------------------------------------------------------------------------------------------------
+1.  Which of the formats supports animation?
+Ans. GIF supports animation. 
+-----------------------------------------------------------------------------------------------------------
+2.  What’s the difference between lossy and lossless compression?
+Ans. Lossy compression :  
+     Lossy compression, as its name implies, does not encode all the information of the file, 
+     so when it is recovered into an image, it will not be an exact representation of the original. 
+     However, it is able to compress images very effectively compared to lossless formats, 
+     as it discards certain information.  
+     A prime example of a lossy compression format is JPEG. 
+     
+     Lossless compression :
+      lossless compression will encode all the information from the original,
+      so when the image is decompressed, it will be an exact representation of the original.
+      As there is no loss of information in lossless compression,
+      it is not able to achieve as high a compression as lossy compression, in most cases.
+      Examples of lossless image compression is PNG and GIF.
+-----------------------------------------------------------------------------------------------------------      
+3.  Which of these formats is lossy-compressed?
+Ans. JPEG supports lossy compression.
+-----------------------------------------------------------------------------------------------------------      
+4.  What happens, technically speaking, when a file is deleted on a FAT file system?
+Ans.When the operating system erases a FAT file, two
+    things occur. First, the system modifies the filename’s first
+    character in the file’s directory entry to signal that the file
+    has been deleted and that the directory entry can be recycled.
+    Second, the system moves all of the file’s FAT clusters
+    to the hard drive’s list of free clusters. The actual file
+    data is never touched.
+-----------------------------------------------------------------------------------------------------------      
+5.  What can someone like you do to ensure (with high probability) that files you delete cannot be recovered?
+Ans. Many individuals prefer to sanitize hard-drive information by intentionally
+     overwriting that data with other data so that the
+     original data cannot be recovered. So this is what someone like me would do.  
+-----------------------------------------------------------------------------------------------------------      
+6.  What’s stdint.h?
+Ans. stdint.h is a header file in the C standard library introduced
+     in the C99 standard library section 7.18 to allow programmers to write more portable code
+     by providing a set of typedefs that specify exact-width integer types, 
+     together with the defined minimum and maximum allowable values for each type, using macros .
+     For example int8_t and uint64_t amongst others could be declared
+     together with defining their corresponding ranges INT8_MIN to INT8_MAX and 0 (zero) to UINT64_MAX.
+-----------------------------------------------------------------------------------------------------------
+7.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+Ans. These are used to manually define datatypes in our program, so as to give our variables a specific size
+     without typecasting it to predefind datatypes like int or char.
+-----------------------------------------------------------------------------------------------------------
+8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+Ans. BYTE : 1 byte.
+     DWORD : 4 bytes.
+     LONG : 4 bytes.
+     WORD : 2 bytes.
+-----------------------------------------------------------------------------------------------------------     
+9.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be?
+Ans. 0x4d42
+-----------------------------------------------------------------------------------------------------------     
+10. What’s the difference between bfSize and biSize?
+Ans. bfsize : Size in BYTES of the file.
+     bisize : Size of rest of header. Set to 40.
+-----------------------------------------------------------------------------------------------------------
+11. What does it mean if biHeight is negative?
+Ans. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner.
+-----------------------------------------------------------------------------------------------------------
+12. What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+Ans. BitsPerPixel which is a 16 bit field.
+-----------------------------------------------------------------------------------------------------------
+13. Why might fopen return NULL in copy.c:37?
+Ans. If the file cannot be opened properly, null is returned.
+-----------------------------------------------------------------------------------------------------------
+14. Why is the third argument to fread always 1 in our code?
+Ans. Because we are reading 1 block of given size at a time.
+-----------------------------------------------------------------------------------------------------------
+15. What value does copy.c:70 assign padding if bi.biWidth is 3?
+Ans. 3.
+-----------------------------------------------------------------------------------------------------------
+16. What does fseek do?
+Ans. fseek is used to move the file pointer manually according to requirement.
+-----------------------------------------------------------------------------------------------------------
+17. What is SEEK_CUR?
+Ans. SEEK_CUR is where the file pointer is currently pointing.
+-----------------------------------------------------------------------------------------------------------
+18. Whodunit?
+Ans. Rick Astley.
+-----------------------------------------------------------------------------------------------------------
